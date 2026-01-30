@@ -1,6 +1,6 @@
 title: Card Test Site
 description: Minimal Decap CMS test
-baseurl: "" # Update to "/repo-name" if not using custom domain
+baseurl: "/site" # Required for GitHub Pages project sites
 url: "" # Update to your GitHub Pages URL
 
 # Build settings
