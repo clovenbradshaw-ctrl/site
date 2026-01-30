@@ -1,0 +1,24 @@
+backend:
+  name: github
+  repo: YOUR_USERNAME/YOUR_REPO  # Injected by GitHub Actions
+  branch: main
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "data"
+    label: "Site Data"
+    files:
+      - name: "cards"
+        label: "Cards"
+        file: "_data/cards.yml"
+        fields:
+          - name: items
+            label: Cards
+            widget: list
+            label_singular: Card
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: description, label: Description, widget: text }
+              - { name: color, label: Color, widget: color, default: "#3b82f6" }
