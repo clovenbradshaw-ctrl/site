@@ -2,7 +2,6 @@ backend:
   name: github
   repo: YOUR_USERNAME/YOUR_REPO  # Injected by GitHub Actions
   branch: main
-  base_url: YOUR_OAUTH_SERVER_URL  # Injected by GitHub Actions
 
 media_folder: "assets/images"
 public_folder: "/assets/images"

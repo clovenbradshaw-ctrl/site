@@ -21,11 +21,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Inject CMS config from secrets
-        run: |
-          # Replace placeholders with GitHub variables/secrets
-          sed -i "s|YOUR_USERNAME/YOUR_REPO|${{ github.repository }}|g" admin/config.yml
-          sed -i "s|YOUR_OAUTH_SERVER_URL|${{ vars.DECAP_OAUTH_URL }}|g" admin/config.yml
+      - name: Inject repo name into CMS config
+        run: sed -i "s|YOUR_USERNAME/YOUR_REPO|${{ github.repository }}|g" admin/config.yml
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
