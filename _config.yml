@@ -5,3 +5,7 @@ url: "" # Update to your GitHub Pages URL
 
 # Build settings
 markdown: kramdown
+
+# Include admin folder files (config.yml is needed for CMS)
+include:
+  - admin
