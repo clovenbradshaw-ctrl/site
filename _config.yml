@@ -1,0 +1,7 @@
+title: Card Test Site
+description: Minimal Decap CMS test
+baseurl: "" # Update to "/repo-name" if not using custom domain
+url: "" # Update to your GitHub Pages URL
+
+# Build settings
+markdown: kramdown

@@ -1,0 +1,10 @@
+name = "decap-cms-oauth"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+# Set these as secrets via: wrangler secret put GITHUB_CLIENT_ID
+# and: wrangler secret put GITHUB_CLIENT_SECRET
+
+[vars]
+# Set your GitHub Pages URL here (or use * for testing only)
+ALLOWED_ORIGINS = "https://YOUR_USERNAME.github.io"

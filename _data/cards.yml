@@ -1,0 +1,8 @@
+items:
+  - title: Welcome Card
+    description: This is your first card. Edit or delete it from the admin panel.
+    color: "#3b82f6"
+
+  - title: Getting Started
+    description: Add new cards using the admin interface at /admin
+    color: "#10b981"
