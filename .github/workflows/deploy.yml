@@ -24,6 +24,10 @@ jobs:
       - name: Inject repo name into CMS config
         run: sed -i "s|YOUR_USERNAME/YOUR_REPO|${{ github.repository }}|g" admin/config.yml
 
+      - name: Configure OAuth backend URL
+        if: ${{ vars.CMS_OAUTH_URL != '' }}
+        run: sed -i "s|# base_url:.*|base_url: ${{ vars.CMS_OAUTH_URL }}|g" admin/config.yml
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
