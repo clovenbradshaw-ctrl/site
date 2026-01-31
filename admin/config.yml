@@ -2,6 +2,11 @@ backend:
   name: github
   repo: YOUR_USERNAME/YOUR_REPO  # Injected by GitHub Actions
   branch: main
+  # REQUIRED for GitHub Pages: Set up OAuth authenticator
+  # 1. Create GitHub OAuth App at https://github.com/settings/developers
+  # 2. Deploy sveltia-cms-auth to Cloudflare Workers: https://github.com/sveltia/sveltia-cms-auth
+  # 3. Uncomment and update the base_url below with your Cloudflare Worker URL
+  # base_url: https://YOUR-WORKER-NAME.YOUR-SUBDOMAIN.workers.dev
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
